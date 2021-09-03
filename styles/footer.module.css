@@ -1,0 +1,41 @@
+.footerMain {
+  background-color: #1f2937;
+  width: 100%;
+  display: grid;
+  row-gap: 2rem;
+  justify-items: center;
+  padding: 2rem;
+}
+
+.footerTitle {
+  margin: auto;
+  font-size: 2rem;
+}
+.footerIcons {
+  display: flex;
+}
+.footerIcons svg {
+  padding: 0 1rem;
+  cursor: pointer;
+  height: 4rem;
+  fill: #f3f4f6;
+}
+.footerButtonUp {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.footerButtonUp h5 {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.footerButtonUp svg {
+  height: 4rem;
+  fill: #f59e0b;
+}
+@media (min-width: 1024px) {
+  .footerMain {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
