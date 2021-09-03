@@ -1,8 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
-body{
-    font-family: 'Poppins', sans-serif;
-    @apply bg-gray-900 text-gray-100 mx-10;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+main {
+  @apply bg-gray-900 text-gray-100 mx-5 md:mx-20;
+}
+.category-menu::-webkit-scrollbar {
+  width: 0px;
+}
+
+.cardContainer:hover {
+  opacity: 0.7;
+}
+.cardImageContainer {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  border-radius: 12px;
 }

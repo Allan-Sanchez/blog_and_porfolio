@@ -21,7 +21,9 @@
   justify-content: center;
   align-items: center;
 }
-
+.cardAboutInfo p {
+  font-size: 1.2rem;
+}
 .iconCardAbout {
   padding: 2rem;
   display: grid;
@@ -53,7 +55,7 @@
     grid-column-end: 4;
   }
   .cardAboutInfo {
-    grid-column-start: 4 ;
+    grid-column-start: 4;
     grid-column-end: 7;
   }
 

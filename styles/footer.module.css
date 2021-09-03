@@ -17,7 +17,7 @@
 .footerIcons svg {
   padding: 0 1rem;
   cursor: pointer;
-  height: 4rem;
+  height: 2.5rem;
   fill: #f3f4f6;
 }
 .footerButtonUp {
@@ -31,7 +31,7 @@
 }
 
 .footerButtonUp svg {
-  height: 4rem;
+  height: 2.5rem;
   fill: #f59e0b;
 }
 @media (min-width: 1024px) {
