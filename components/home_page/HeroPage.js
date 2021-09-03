@@ -21,9 +21,9 @@ export default function HeroPage() {
           <Line />
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aut
-          placeat blanditiis natus quam nobis magnam, doloribus cupiditate.
-          Quaerat, dolore.
+          I am a self-taught young man from Guatemala.
+          I have solid knowledge in various technologies such as VUE.JS, REACT,
+          JAVASCRIPT, PHP, FLUTTER. To know more about me, go to me<span className="text-yellow-600 my-5"> GITHUB </span>
         </p>
         {/* social media */}
         <div className="py-10 flex items-center">
