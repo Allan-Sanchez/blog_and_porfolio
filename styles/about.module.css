@@ -1,0 +1,69 @@
+.about {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10rem 1rem;
+  background-color: #111827;
+}
+
+.cardAbout {
+  width: 100%;
+  padding: 1.5rem;
+  background: #1f2937;
+  border-radius: 2rem;
+}
+.cardAboutImage {
+  /* grid-column-start: 1; */
+  /* grid-column-end: 3; */
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconCardAbout {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  justify-items: center;
+}
+
+.iconAbout {
+  height: 4rem;
+}
+
+@media (min-width: 640px) {
+  .iconCardAbout {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardAbout {
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .cardAboutImage {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .cardAboutInfo {
+    grid-column-start: 4 ;
+    grid-column-end: 7;
+  }
+
+  .iconCardAbout {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .iconCardAbout {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
