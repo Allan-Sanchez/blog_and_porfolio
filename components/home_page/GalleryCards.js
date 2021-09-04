@@ -66,13 +66,13 @@ export default function GalleryCards() {
           className="cardContainer h-80 w-96 p-5 bg-gray-800 rounded-2xl  cursor-pointer"
           key={index}
         >
-          <div className=" cardImageContainer h-52 w-full bg-gray-600 rounded-xl flex justify-center">
-            <img
-              className="object-contain"
+          <div className=" cardImageContainer h-52 w-full bg-gray-600 rounded-xl flex justify-center relative">
+            <Image
+              src={data.url}
+              alt={data.name}
               width={data.width}
               height={data.height}
-              src={data.url}
-              alt={`Description image ${data.name}`}
+              objectFit="contain"
             />
           </div>
           <h3 className="mt-3 font-bold text-xl">{data.name}.</h3>
