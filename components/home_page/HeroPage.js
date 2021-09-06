@@ -10,7 +10,7 @@ import BulletPoints from "../svg/bulletPoints";
 
 export default function HeroPage() {
   return (
-    <div className="lg:grid lg:grid-cols-2 gap-y-40 ">
+    <div className="lg:grid lg:grid-cols-2 gap-y-40 pt-16">
       <div className="pt-14">
         <h4 className="text-2xl">Hey!</h4>
         <h1 className="w-11/12 text-3xl sm:text-5xl font-bold my-5">
@@ -21,9 +21,10 @@ export default function HeroPage() {
           <Line />
         </div>
         <p>
-          I am a self-taught young man from Guatemala.
-          I have solid knowledge in various technologies such as VUE.JS, REACT,
-          JAVASCRIPT, PHP, FLUTTER. To know more about me, go to me<span className="text-yellow-600 my-5"> GITHUB </span>
+          I am a self-taught young man from Guatemala. I have solid knowledge in
+          various technologies such as VUE.JS, REACT, JAVASCRIPT, PHP, FLUTTER.
+          To know more about me, go to me
+          <span className="text-yellow-600 my-5"> GITHUB </span>
         </p>
         {/* social media */}
         <div className="py-10 flex items-center">
