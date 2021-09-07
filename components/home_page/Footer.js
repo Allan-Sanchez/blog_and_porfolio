@@ -14,8 +14,10 @@ export default function Footer() {
         <LogoYoutube />
       </div>
       <div className={styles.footerButtonUp}>
-        <h5>Back to Top</h5>
-        <ArrowUp/>
+        <a href="#heroPage">
+          <h5>Back to Top</h5>
+          <ArrowUp />
+        </a>
       </div>
     </footer>
   );

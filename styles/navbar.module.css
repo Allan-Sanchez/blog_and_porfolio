@@ -40,14 +40,14 @@
   backdrop-filter: blur(15px);
 }
 
-.marker {
+.markerHeroPage {
   position: absolute;
   top: 0;
   transition: 0.5s;
   z-index: 1;
   left: 9%;
 }
-.marker::before {
+.markerHeroPage::before {
   content: "";
   position: absolute;
   top: -5px;

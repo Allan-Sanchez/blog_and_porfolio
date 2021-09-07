@@ -11,7 +11,11 @@ import Footer from "../components/home_page/Footer";
 // icons
 import About from "../components/home_page/About";
 
+
 export default function Home() {
+
+
+
   return (
     <>
       <Head>
@@ -29,7 +33,7 @@ export default function Home() {
 
         <About />
 
-        <section className="mt-28">
+        <section id="projects" className="pt-20">
           <Menu />
 
           <GalleryCards />

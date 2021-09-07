@@ -25,6 +25,10 @@
   align-items: center;
   cursor: pointer;
 }
+
+.footerButtonUp a {
+  display: flex;
+}
 .footerButtonUp h5 {
   font-size: 2rem;
   margin-right: 1rem;
