@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Menu() {
   return (
-    <div className="mb-10">
+    <div id="projects" className="mb-10">
       <h2 className="text-4xl font-bold">My Projects</h2>
       <ul className="text-2xl mt-10 flex justify-start w-full overflow-x-auto category-menu">
         <li className="mr-10 text-yellow-600">

@@ -12,6 +12,7 @@
   color: #f3f4f6;
   z-index: 100;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
 }
 
 .navBar .navBarLogo {
@@ -63,14 +64,74 @@
   height: 2.5rem;
   color: #d97706;
 }
+
+/* menu movile */
+
 .navBarMenuMovil {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100vh;
-  background: rebeccapurple;
+  height: 100%;
+  background: #111827;
+  /* background: rgba(0, 0, 0, 0.25); */
   z-index: 100;
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+  /* display: none; */
 }
+.navBarMenuMovil .navBarContainerMovil li {
+  list-style: none;
+}
+.navBarContainerMovil li a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: 3rem;
+  transition-delay: 0.3s;
+}
+
+.navBarContainerMovil li a:hover {
+  color: rgba(255, 255, 255, 0.1);
+  transition-delay: 0s;
+}
+
+.navBarContainerMovil li a::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1rem;
+  color: #d97706;
+  text-shadow: 0 0 10px #d97706, 0 0 20px #d97706, 0 0 60px #d97706;
+  font-weight: 500;
+  letter-spacing: 25px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.navBarContainerMovil li:hover a::before {
+  opacity: 1;
+  letter-spacing: 6px;
+  transition-delay: 0.5s;
+}
+.iconClose {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  height: 3rem;
+  color: #d97706;
+}
+/* media querys */
 @media (min-width: 768px) {
   .navBar {
     padding: 1rem 5rem;
@@ -80,7 +141,7 @@
   }
 }
 @media (min-width: 1024px) {
-  .iconHamburger {
+  .iconHamburgerContainer {
     display: none;
   }
   .navBar .navBarContainer {

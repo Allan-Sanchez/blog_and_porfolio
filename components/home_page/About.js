@@ -19,7 +19,7 @@ import SvgFlutter from "../svg/tecnologies/SvgFlutter";
 
 export default function About() {
   return (
-    <div className={styles.about}>
+    <div id="about" className={styles.about}>
       <div className={styles.cardAbout}>
         <div className={styles.cardAboutImage}>
           <Image

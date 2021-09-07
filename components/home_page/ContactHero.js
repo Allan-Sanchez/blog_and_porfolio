@@ -3,7 +3,7 @@ import Email from "../svg/email";
 
 export default function ContactHero() {
   return (
-    <div className="w-full h-48 my-10 rounded-3xl bg-yellow-500 flex flex-col lg:flex-row justify-center lg:justify-around items-center  px-20">
+    <div id="contact" className="w-full h-48 my-10 rounded-3xl bg-yellow-500 flex flex-col lg:flex-row justify-center lg:justify-around items-center  px-20">
       <h3 className="text-2xl md:text-4xl text-center pb-5 font-semibold">
         {" "}
         Interested working with me?

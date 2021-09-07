@@ -10,7 +10,7 @@ import BulletPoints from "../svg/bulletPoints";
 
 export default function HeroPage() {
   return (
-    <div className="lg:grid lg:grid-cols-2 gap-y-40 pt-16">
+    <div id="heroPage" className="lg:grid lg:grid-cols-2 gap-y-40 pt-16">
       <div className="pt-14">
         <h4 className="text-2xl">Hey!</h4>
         <h1 className="w-11/12 text-3xl sm:text-5xl font-bold my-5">
