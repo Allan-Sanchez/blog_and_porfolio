@@ -18,7 +18,7 @@ body {
 }
 
 main {
-  @apply bg-gray-900 text-gray-100 mx-5 md:mx-20;
+@apply bg-gray-900 text-gray-100 mx-5 md:mx-20;
 }
 .category-menu::-webkit-scrollbar {
   width: 0px;

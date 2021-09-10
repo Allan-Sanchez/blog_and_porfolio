@@ -11,11 +11,10 @@ import Footer from "../components/home_page/Footer";
 // icons
 import About from "../components/home_page/About";
 
+//load the post
+import { getAllFilesMetaData } from "../lib/mdx";
 
-export default function Home() {
-
-
-
+export default function Home({ posts }) {
   return (
     <>
       <Head>
@@ -36,7 +35,7 @@ export default function Home() {
         <section id="projects" className="pt-20">
           <Menu />
 
-          <GalleryCards />
+          <GalleryCards posts={posts} />
           <Pagination />
           <ContactHero />
         </section>
@@ -44,4 +43,11 @@ export default function Home() {
       <Footer />
     </>
   );
+}
+
+export async function getStaticProps() {
+  const posts = getAllFilesMetaData();
+  return {
+    props: { posts },
+  };
 }

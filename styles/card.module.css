@@ -8,7 +8,12 @@
   row-gap: 20px;
 }
 
-
+.cardTitle {
+  width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
 @media (min-width: 640px) {
   .cardContainer {
@@ -27,5 +32,3 @@
     grid-template-columns: 300px 300px 300px 300px;
   }
 }
-
-
