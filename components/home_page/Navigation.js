@@ -19,25 +19,41 @@ export default function Navigation() {
       <nav className={styles.navBar}>
         <h2 className={styles.navBarLogo}>Allan Sanchez</h2>
         <ul className={styles.navBarContainer}>
-          <li className={`${heightScroll < 582 ? styles.active : null} `}>
-            <a href="#heroPage">Home</a>
+          <li>
+            <a
+              href="#heroPage"
+              className={`${heightScroll < 582 ? styles.active : null} `}
+            >
+              Home
+            </a>
           </li>
-          <li
-            className={`${
-              heightScroll > 582 && heightScroll < 1250 ? styles.active : ""
-            }`}
-          >
-            <a href="#about">About</a>
+          <li>
+            <a
+              href="#about"
+              className={`${
+                heightScroll > 582 && heightScroll < 1250 ? styles.active : ""
+              }`}
+            >
+              About
+            </a>
           </li>
-          <li
-            className={`${
-              heightScroll > 1250 && heightScroll < 2300 ? styles.active : ""
-            }`}
-          >
-            <a href="#projects">Projects</a>
+          <li>
+            <a
+              href="#projects"
+              className={`${
+                heightScroll > 1250 && heightScroll < 2000 ? styles.active : ""
+              }`}
+            >
+              Projects
+            </a>
           </li>
-          <li className={`${heightScroll > 2300 ? styles.active : ""}`}>
-            <a href="#contact">Contact</a>
+          <li>
+            <a
+              href="#contact"
+              className={`${heightScroll > 2000 ? styles.active : ""}`}
+            >
+              Contact
+            </a>
           </li>
           <HoverEffectNav height={heightScroll} />
         </ul>

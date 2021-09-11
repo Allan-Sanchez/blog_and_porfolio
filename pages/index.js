@@ -32,13 +32,16 @@ export default function Home({ posts }) {
 
         <About />
 
-        <section id="projects" className="pt-20">
+        <section id="projects" className="cardGallerySection">
+
           <Menu />
 
           <GalleryCards posts={posts} />
+          {/* TODO: fix tailwincss */}
+
           <Pagination />
-          <ContactHero />
         </section>
+        <ContactHero />
       </main>
       <Footer />
     </>

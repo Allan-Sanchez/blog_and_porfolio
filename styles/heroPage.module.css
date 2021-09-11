@@ -1,0 +1,161 @@
+.heroPage {
+  padding-top: 4.25rem;
+  color: var(--main-secondary-color);
+}
+
+.heroPage .heroColumn {
+  margin-top: 3rem;
+  position: relative;
+}
+.heroPage .heroColumn h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.heroPage .heroColumn h1 {
+  width: 90%;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: bold;
+  margin: 1.25rem 0px;
+}
+.heroPage .heroColumn h1 span {
+  color: var(--main-primary-color);
+}
+.heroContainerLine {
+  display: flex;
+  justify-content: center;
+}
+.heroPage .heroColumn p {
+  padding: 1.25rem 0px;
+}
+.heroPage .heroColumn p span {
+  color: var(--main-primary-color);
+}
+.heroContact {
+  display: flex;
+  align-items: center;
+}
+.heroPage .icons {
+  display: flex;
+}
+.icons svg {
+  padding: 0 1rem;
+  cursor: pointer;
+  height: 2.5rem;
+  fill: #f3f4f6;
+}
+
+.heroButtons {
+  padding: 1.25rem 0px;
+  display: flex;
+  align-items: center;
+}
+
+.heroButtons div {
+  padding: 1rem 0px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+.heroButtons div a {
+  text-decoration: none;
+  color: var(--main-secondary-color);
+}
+.heroButtons .heroButtonPrimary {
+  width: 10rem;
+  background-color: var(--main-primary-color);
+}
+.heroButtons .heroButtonSecondary {
+  width: 15rem;
+  margin-left: 2.5rem;
+  border: 2px solid var(--main-primary-color);
+}
+.heroButtons svg {
+  fill: currentColor;
+  width: 1.75rem;
+  display: none;
+}
+
+/* circule image */
+.heroColumnImage {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroColumn .heroCircule {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: var(--main-primary-color);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroCirculeLine {
+  position: absolute;
+  top: 42%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border: 1px solid var(--main-secondary-color);
+}
+.heroBulletPoints {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 4rem;
+}
+
+/* xs */
+@media (min-width: 325px) {
+  .heroColumn .heroCircule {
+    width: 20rem;
+    height: 20rem;
+  }
+  .heroCirculeLine {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .heroPage .heroColumn h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .heroButtons svg {
+    display: block;
+  }
+  .heroButtons a {
+    text-decoration: none;
+    margin-left: 0.75rem;
+  }
+  .heroColumn .heroCircule {
+    width: 25rem;
+    height: 25rem;
+  }
+  .heroCirculeLine {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .heroPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    /* align-items: center; */
+    /* min-height: 100vh; */
+  }
+}

@@ -30,7 +30,7 @@ export default function About() {
           />
         </div>
         <div className={styles.cardAboutInfo}>
-          <h3 className="text-2xl font-bold my-5">About Me</h3>
+          <h3 className="text-2xl font-bold">About Me</h3>
           <p>
             My name is Allan Edrey Sanchez Rixtun, web developer but with solid
             knowledge in backend and mobile technology with flutter.

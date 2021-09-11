@@ -1,8 +1,15 @@
 import { MDXRemote } from "next-mdx-remote";
 import { getFileBySlug, getFiles } from "../../lib/mdx";
+import styles from "../../styles/blog.module.css";
 
 export default function Post({ source, frontMatter }) {
-  return <MDXRemote {...source} />;
+  return (
+    <>
+      <div className={styles.blogContainer}>
+        <MDXRemote {...source} />
+      </div>
+    </>
+  );
 }
 
 export async function getStaticProps({ params }) {

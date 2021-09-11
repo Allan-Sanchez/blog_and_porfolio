@@ -1,27 +1,16 @@
-import React from 'react'
+import React from "react";
+import styles from "../../styles/card.module.css";
 
 export default function Pagination() {
-    return (
-        <div className="flex justify-center items-center mt-5">
-            <div className="w-14 h-14 mx-2 bg-gray-600 rounded-xl flex justify-center items-center border-2 border-yellow-600">
-              1
-            </div>
-            <div className="w-14 h-14 mx-2 bg-gray-600 rounded-xl flex justify-center items-center">
-              2
-            </div>
-            <div className="w-14 h-14 mx-2 bg-gray-600 rounded-xl flex justify-center items-center">
-              3
-            </div>
-            <div className="w-14 h-14 mx-2 bg-gray-600 rounded-xl flex justify-center items-center">
-              4
-            </div>
-            <div className="w-14 h-14 mx-2 bg-gray-600 rounded-xl flex justify-center items-center">
-              5
-            </div>
-            ...
-            <div className="w-14 h-14 mx-2 bg-gray-600 rounded-xl flex justify-center items-center">
-              80
-            </div>
-          </div>
-    )
+  return (
+    <div className={styles.galleryPagination}>
+      <div>1</div>
+      <div className={styles.active}>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      ...
+      <div>80</div>
+    </div>
+  );
 }

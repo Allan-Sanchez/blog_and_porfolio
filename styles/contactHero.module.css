@@ -1,0 +1,59 @@
+.contactHeroContainer {
+  width: 100%;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  background-color: rgba(245, 158, 11);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10rem;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.contactHeroTitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-bottom: 1.25rem;
+  /* font-size: 2.25rem; */
+}
+.contactHeroIconContainer {
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  background-color: rgba(243, 244, 246);
+  color: rgba(17, 24, 39);
+  border-radius: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+.contactHeroIconContainer a {
+  text-decoration: none;
+  color: var(--main-primary-color);
+}
+.contactHeroSvg {
+  display: none;
+  width: 1.25rem;
+  fill: var(--main-primary-color);
+  margin-right: 1rem;
+}
+@media (min-width: 640px) {
+  .contactHeroSvg {
+    width: 2rem;
+    display: block;
+  }
+}
+@media (min-width: 769px) {
+  .contactHeroContainer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .contactHeroTitle {
+    font-size: 2.25rem;
+  }
+}

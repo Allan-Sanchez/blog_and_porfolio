@@ -28,6 +28,8 @@
 
 .footerButtonUp a {
   display: flex;
+  text-decoration: none;
+  color: var(--main-secondary-color);
 }
 .footerButtonUp h5 {
   font-size: 2rem;
