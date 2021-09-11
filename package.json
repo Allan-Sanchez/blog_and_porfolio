@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "eslint": "7.32.0",
+    "postcss": "8.3.6",
     "eslint-config-next": "11.1.0"
   }
 }
