@@ -15,6 +15,7 @@ import About from "../components/home_page/About";
 import { getAllFilesMetaData } from "../lib/mdx";
 
 export default function Home({ posts }) {
+
   return (
     <>
       <Head>
@@ -33,11 +34,9 @@ export default function Home({ posts }) {
         <About />
 
         <section id="projects" className="cardGallerySection">
-
           <Menu />
 
           <GalleryCards posts={posts} />
-          {/* TODO: fix tailwincss */}
 
           <Pagination />
         </section>

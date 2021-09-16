@@ -20,12 +20,12 @@
   margin-right: 2rem;
   padding-bottom: 0.5rem;
 }
-.galleryTitle ul li a {
-  text-decoration: none;
+.galleryTitle ul li div {
+  cursor: pointer;
   color: var(--main-secondary-color);
 }
 
-.galleryTitle ul li a.active {
+.galleryTitle ul li div.active {
   color: var(--main-primary-color);
   border-bottom: 5px solid var(--main-primary-color);
 }
@@ -104,6 +104,11 @@
 }
 .galleryPagination div.active {
   border: 2px solid var(--main-primary-color);
+}
+
+.galleryPagination .galleryPaginationFinalBtn {
+  background-color: rgba(75, 85, 99, 0.5);
+  cursor: not-allowed;
 }
 
 /* media query */

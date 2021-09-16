@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import styles from "../../styles/navbar.module.css";
 
 export default function HoverEffectNav({ width, height }) {
-  useEffect(() => {
-    console.log(height);
-  }, [height]);
+  // useEffect(() => {
+  //   console.log(height);
+  // }, [height]);
 
   if (height >= 0 && height < 582) {
     return <div className={` ${styles.markerHeroPage}`}></div>;

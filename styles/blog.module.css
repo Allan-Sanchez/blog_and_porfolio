@@ -1,5 +1,5 @@
 .blogContainer {
-  margin: 2rem 5rem;
+  margin: 2rem 2rem;
 }
 
 .blogContainer h1 {
@@ -20,4 +20,16 @@
 }
 .blogContainer h6 {
   margin: 2rem 0;
+}
+
+.blogContainer img {
+  display: inline-block;
+  max-width: 100%;
+  margin: 1rem auto;
+}
+
+@media (min-width: 768px){
+  .blogContainer {
+    margin: 2rem 10rem;
+  }
 }

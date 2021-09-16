@@ -34,12 +34,13 @@
 }
 .contactHeroIconContainer a {
   text-decoration: none;
-  color: var(--main-primary-color);
+  /* color: var(--main-primary-color); */
+  color: var(--main-bg-color);
 }
 .contactHeroSvg {
   display: none;
   width: 1.25rem;
-  fill: var(--main-primary-color);
+  fill: var(--main-bg-color);
   margin-right: 1rem;
 }
 @media (min-width: 640px) {
