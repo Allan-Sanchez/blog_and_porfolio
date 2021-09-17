@@ -101,6 +101,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .galleryPagination div.active {
   border: 2px solid var(--main-primary-color);

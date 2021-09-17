@@ -1,3 +1,4 @@
+import { useEffect, useContext } from "react";
 import Head from "next/head";
 // styles
 // components
@@ -10,12 +11,19 @@ import Menu from "../components/home_page/Menu";
 import Footer from "../components/home_page/Footer";
 // icons
 import About from "../components/home_page/About";
-
+//context
+import GalleryContext from "../context/GalleryContext";
 //load the post
 import { getAllFilesMetaData } from "../lib/mdx";
 
 export default function Home({ posts }) {
+  const galleryContext = useContext(GalleryContext);
+  const { setPosts, getNameCategories } = galleryContext;
 
+  useEffect(() => {
+    setPosts(posts);
+    getNameCategories();
+  }, []);
   return (
     <>
       <Head>
@@ -36,7 +44,7 @@ export default function Home({ posts }) {
         <section id="projects" className="cardGallerySection">
           <Menu />
 
-          <GalleryCards posts={posts} />
+          <GalleryCards />
 
           <Pagination />
         </section>

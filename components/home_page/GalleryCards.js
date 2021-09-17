@@ -1,24 +1,20 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/card.module.css";
 import GalleryContext from "../../context/GalleryContext";
 
-export default function GalleryCards({ posts }) {
-  // const [imageList, SetImageList] = useState(posts);
-
+export default function GalleryCards() {
   const galleryContext = useContext(GalleryContext);
-  const { postsFilter, setPosts } = galleryContext;
+  const { postsFilter, getPostwithPagination, postsPage, } = galleryContext;
 
   useEffect(() => {
-    setPosts(posts);
-  }, []);
-
-  // console.log(postsFilter);
+    getPostwithPagination();
+  }, [postsFilter]);
   return (
     <div className={styles.galleryCard}>
       {/* card 1 */}
-      {postsFilter.map((data, index) => (
+      {postsPage.map((data, index) => (
         <div className={styles.cardContainer} key={index}>
           <div className={styles.cardImageContainer}>
             <Image

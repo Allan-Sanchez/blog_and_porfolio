@@ -13,13 +13,10 @@ export default function Menu() {
     categories,
   } = gallleryContext;
   const [itemActive, setItemActive] = useState("All");
-  const [menu, setMenu] = useState(categories);
+  const [menu, setMenu] = useState([]);
 
   useEffect(() => {
-    // const categoryArray = getNameCategories();
     setMenu(["All", ...new Set(categories)]);
-
-    getNameCategories();
   }, [categories]);
 
   const handleItemActive = (item) => {

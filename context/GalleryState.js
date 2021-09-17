@@ -7,15 +7,25 @@ import {
   GET_POSTS_CATEGORY,
   GET_POSTS,
   GET_NAME_CATEGORY,
+  GET_POST_WITH_PAGINATION,
+  SET_PREVIOUS_PAGE,
+  SET_NEXT_PAGE,
 } from "../types";
 
 const GalleryState = ({ children }) => {
   const initalState = {
+    // global posts all
     posts: [],
-    postsFilter: [],
-    prevent: 6,
-    next: 6,
+    //array with categories
     categories: [],
+    // post filter with category
+    postsFilter: [],
+    // post filter with pagination
+    postsPage: [],
+    //prevent page
+    previous: 0,
+    //next page
+    next: 5,
   };
 
   const [state, dispatch] = useReducer(GalleryReducer, initalState);
@@ -53,16 +63,42 @@ const GalleryState = ({ children }) => {
     });
   };
 
+  const getPostwithPagination = () => {
+    dispatch({
+      type: GET_POST_WITH_PAGINATION,
+    });
+  };
+
+  const setPreviousPage = (numberPage) => {
+    dispatch({
+      type: SET_PREVIOUS_PAGE,
+      payload: numberPage,
+    });
+  };
+
+  const setNextPage = (numberPage) => {
+    dispatch({
+      type: SET_NEXT_PAGE,
+      payload: numberPage,
+    });
+  };
+
   return (
     <GalleryContext.Provider
       value={{
         postsG: state.posts,
         postsFilter: state.postsFilter,
         categories: state.categories,
+        postsPage: state.postsPage,
+        previous: state.previous,
+        next: state.next,
         setPosts,
         getPostWithCategory,
         getAllPosts,
         getNameCategories,
+        getPostwithPagination,
+        setPreviousPage,
+        setNextPage,
       }}
     >
       {children}

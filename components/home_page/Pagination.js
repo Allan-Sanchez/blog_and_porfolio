@@ -6,9 +6,11 @@ export default function Pagination() {
   const galleryContext = useContext(GalleryContext);
   const [btnPagination, setBtnPagination] = useState([]);
   const [totalPages, setTotalPages] = useState(0);
-  const { postsFilter } = galleryContext;
+  const { postsFilter, setPreviousPage, setNextPage, getPostwithPagination } =
+    galleryContext;
 
   useEffect(() => {
+    //CARD GALLERY NUMBER
     setTotalPages(Math.ceil(postsFilter.length / 5));
     const arrayTemp = [];
     for (let index = 0; index < totalPages; index++) {
@@ -18,12 +20,13 @@ export default function Pagination() {
 
     // setBtnPagination(postsFilter);
   }, [postsFilter, totalPages]);
-
   const [pageActive, setPageActive] = useState(1);
 
   const handleClickPage = (btn) => {
-    console.log(btn);
     setPageActive(btn);
+    setPreviousPage(btn * 5);
+    setNextPage(btn * 5 + 2);
+    getPostwithPagination();
   };
   // console.log(posts);
   return (
