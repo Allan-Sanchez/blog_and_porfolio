@@ -20,12 +20,12 @@ export default function Pagination() {
 
     // setBtnPagination(postsFilter);
   }, [postsFilter, totalPages]);
-  const [pageActive, setPageActive] = useState(1);
+  const [pageActive, setPageActive] = useState(0);
 
   const handleClickPage = (btn) => {
     setPageActive(btn);
     setPreviousPage(btn * 5);
-    setNextPage(btn * 5 + 2);
+    setNextPage(btn * 5 + 5);
     getPostwithPagination();
   };
   // console.log(posts);

@@ -95,6 +95,7 @@
   transition: 0.5s;
   font-size: 3rem;
   transition-delay: 0.3s;
+  color: var(--manin-secoundary-color);
 }
 
 .navBarContainerMovil li a:hover {
