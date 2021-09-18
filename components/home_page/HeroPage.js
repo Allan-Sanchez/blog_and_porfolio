@@ -36,9 +36,27 @@ export default function HeroPage() {
           <p>Contact with me.</p>
 
           <div className={styles.icons}>
-            <LogoGithub />
-            <LogoLinkedin />
-            <LogoYoutube />
+            <a
+              href="https://github.com/Allan-Sanchez"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LogoGithub />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCculhVTh_BAt-eFbDf5M1aQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LogoLinkedin />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCculhVTh_BAt-eFbDf5M1aQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LogoYoutube />
+            </a>
           </div>
         </div>
         {/* buttons */}
