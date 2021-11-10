@@ -69,10 +69,10 @@
 
 .cardContainer .cardContainerButton {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 100%;
 }
-.cardContainer .cardContainerButton div {
+.cardContainer .cardContainerButton a {
   height: 2rem;
   background-color: var(--main-primary-color);
   display: flex;
@@ -80,10 +80,12 @@
   align-items: center;
   border-radius: 1.5rem;
   padding: 1.25rem 1.5rem;
-}
-.cardContainer .cardContainerButton div a {
   color: var(--main-secondary-color);
   text-decoration: none;
+}
+.cardContainer .cardContainerCategory {
+  color: var(--main-secondary-color);
+  opacity: 0.3;
 }
 
 .galleryPagination {
