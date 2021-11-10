@@ -44,7 +44,7 @@ export default function HeroPage() {
               <LogoGithub />
             </a>
             <a
-              href="https://www.youtube.com/channel/UCculhVTh_BAt-eFbDf5M1aQ"
+              href="https://www.linkedin.com/in/allan-sanchez-884607128/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -76,10 +76,10 @@ export default function HeroPage() {
         <div className={styles.heroCirculeLine}></div>
         <div className={styles.heroCircule}>
           <Image
-            src="https://res.cloudinary.com/dx9n8tsyu/image/upload/v1588627345/017-monster_ks4hbg.png"
-            alt="monster avatar"
-            width={250}
-            height={250}
+            src="https://res.cloudinary.com/dx9n8tsyu/image/upload/v1636494362/IMG_20211106_105652-removebg-preview_k4sd89.png"
+            alt="my photo"
+            width={370}
+            height={499}
           />
         </div>
         <BulletPoints className={styles.heroBulletPoints} />
