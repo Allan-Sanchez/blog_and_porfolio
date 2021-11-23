@@ -17,7 +17,7 @@ export default function HoverEffectNav({ width, height }) {
       ></div>
     );
   }
-  if (height >= 1251 && height < 2000) {
+  if (height >= 1251 && height < 1800) {
     return (
       <div
         style={{ left: "58%" }}

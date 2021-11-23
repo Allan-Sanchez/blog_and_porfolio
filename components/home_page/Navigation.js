@@ -42,7 +42,7 @@ export default function Navigation() {
               <a
                 href="#projects"
                 className={`${
-                  heightScroll > 1250 && heightScroll < 2000
+                  heightScroll > 1250 && heightScroll < 1800
                     ? styles.active
                     : ""
                 }`}
@@ -53,7 +53,7 @@ export default function Navigation() {
             <li>
               <a
                 href="#contact"
-                className={`${heightScroll > 2000 ? styles.active : ""}`}
+                className={`${heightScroll > 1800 ? styles.active : ""}`}
               >
                 Contact
               </a>
