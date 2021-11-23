@@ -23,8 +23,9 @@ export default function Pagination() {
   const [pageActive, setPageActive] = useState(0);
 
   const handleClickPage = (btn) => {
+    // TODO:: create this function in the reducer
     setPageActive(btn);
-    setPreviousPage(btn * 5);
+    setPreviousPage(btn * 6 );
     setNextPage(btn * 5 + 5);
     getPostwithPagination();
   };
@@ -32,7 +33,7 @@ export default function Pagination() {
   return (
     <>
       <div className={styles.galleryPagination}>
-        <div>{`<`}</div>
+        {/* <div>{`<`}</div> */}
         {btnPagination.map((page, index) => (
           <div
             key={index}
