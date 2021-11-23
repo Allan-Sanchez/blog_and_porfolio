@@ -39,6 +39,7 @@ body {
 }
 
 main {
+  max-width: 1200px;
   margin: 0 1.5rem;
 }
 
@@ -53,5 +54,11 @@ main {
 @media (min-width: 768px) {
   main {
     margin: 0 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    margin: 0 auto;
   }
 }

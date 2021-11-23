@@ -16,54 +16,58 @@ export default function Navigation() {
   }, []);
   return (
     <>
-      <nav className={styles.navBar}>
-        <h2 className={styles.navBarLogo}>Allan Sanchez</h2>
-        <ul className={styles.navBarContainer}>
-          <li>
-            <a
-              href="#heroPage"
-              className={`${heightScroll < 582 ? styles.active : null} `}
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#about"
-              className={`${
-                heightScroll > 582 && heightScroll < 1250 ? styles.active : ""
-              }`}
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#projects"
-              className={`${
-                heightScroll > 1250 && heightScroll < 2000 ? styles.active : ""
-              }`}
-            >
-              Projects
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className={`${heightScroll > 2000 ? styles.active : ""}`}
-            >
-              Contact
-            </a>
-          </li>
-          <HoverEffectNav height={heightScroll} />
-        </ul>
-        <div
-          className={styles.iconHamburgerContainer}
-          onClick={() => setNavbarMovil(true)}
-        >
-          <SvgHamburger className={styles.iconHamburger} />
-        </div>
-      </nav>
+      <div className={styles.navContainer}>
+        <nav className={styles.navBar}>
+          <h2 className={styles.navBarLogo}>Allan Sanchez</h2>
+          <ul className={styles.navBarContainer}>
+            <li>
+              <a
+                href="#heroPage"
+                className={`${heightScroll < 582 ? styles.active : null} `}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                className={`${
+                  heightScroll > 582 && heightScroll < 1250 ? styles.active : ""
+                }`}
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                className={`${
+                  heightScroll > 1250 && heightScroll < 2000
+                    ? styles.active
+                    : ""
+                }`}
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className={`${heightScroll > 2000 ? styles.active : ""}`}
+              >
+                Contact
+              </a>
+            </li>
+            <HoverEffectNav height={heightScroll} />
+          </ul>
+          <div
+            className={styles.iconHamburgerContainer}
+            onClick={() => setNavbarMovil(true)}
+          >
+            <SvgHamburger className={styles.iconHamburger} />
+          </div>
+        </nav>
+      </div>
 
       {navbarMovil ? (
         <div className={styles.navBarMenuMovil}>
