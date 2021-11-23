@@ -33,7 +33,10 @@ export default function Home({ posts }) {
           content="Portfolio, cv, resume, web projects react, vue, node, graphql also you will find mobile projects developed in flutter."
         />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:title" content="Allan Sanchez | Portfolio, Frontend Developer, React, Vue " />
+        <meta
+          property="og:title"
+          content="Allan Sanchez | Portfolio, Frontend Developer, React, Vue "
+        />
         <meta property="og:site_name" content="blog-and-portfolio" />
         <meta
           property="og:url"
@@ -50,11 +53,12 @@ export default function Home({ posts }) {
         />
         <meta name="twitter:card" content="summary"></meta>
         {/* TODO:: change domain */}
-        <meta name="twitter:site" content="@blog-and-portfolio"/>
-        <meta name="twitter:creator" content="@AllanSanchez2"/>
+        <meta name="twitter:site" content="@blog-and-portfolio" />
+        <meta name="twitter:creator" content="@AllanSanchez2" />
       </Head>
 
-      <Navigation />
+        <Navigation />
+
       <main>
         <HeroPage />
 
