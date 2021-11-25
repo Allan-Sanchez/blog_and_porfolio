@@ -63,11 +63,17 @@ export default function HeroPage() {
         <div className={styles.heroButtons}>
           <div className={styles.heroButtonPrimary}>
             <Email />
-            <a href="#">Mail Me</a>
+            <a href="mailto:asanchezrixtun@gmail.com">Mail Me</a>
           </div>
           <div className={styles.heroButtonSecondary}>
             <Download />
-            <a href="#">Download CV</a>
+            <a
+              rel="noreferrer"
+              href="https://drive.google.com/file/d/18USR7-WOYb9kAbGm8UfmKVxVd-KLHVb3/view?usp=sharing"
+              target="_blank"
+            >
+              Download CV
+            </a>
           </div>
         </div>
       </div>
@@ -76,7 +82,7 @@ export default function HeroPage() {
         <div className={styles.heroCirculeLine}></div>
         <div className={styles.heroCircule}>
           <Image
-            src="https://res.cloudinary.com/dx9n8tsyu/image/upload/v1636494362/IMG_20211106_105652-removebg-preview_k4sd89.png"
+            src="https://res.cloudinary.com/dx9n8tsyu/image/upload/f_auto,q_auto/v1636494362/IMG_20211106_105652-removebg-preview_k4sd89.png"
             alt="my photo"
             width={370}
             height={499}

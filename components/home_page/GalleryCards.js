@@ -43,7 +43,7 @@ export default function GalleryCards() {
                   objectFit="contain"
                 />
               </div>
-              <h3 className={styles.cardTitle}>{data.title}.</h3>
+              <h3 className={styles.cardTitle}>{data.title}</h3>
               <div className={styles.cardContainerButton}>
                 <div
                   className={styles.cardContainerCategory}

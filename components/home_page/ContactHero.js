@@ -8,7 +8,7 @@ export default function ContactHero() {
       <h3 className={styles.contactHeroTitle}> Interested working with me?</h3>
       <div className={styles.contactHeroIconContainer}>
         <Email className={styles.contactHeroSvg} />
-        <a href="#">Email Me</a>
+        <a href="mailto:asanchezrixtun@gmail.com">Email Me</a>
       </div>
     </div>
   );

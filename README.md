@@ -14,13 +14,13 @@ Portfolio and blog created to document my personal projects in which you can see
 
 ## Project Image
 
-![image portfolio](https://res.cloudinary.com/dx9n8tsyu/image/upload/v1637616915/react-proyect/screenshot-blog-and-porfolio.vercel.app-2021.11.22-15_34_24_sztdnl.png)
+![image portfolio](https://res.cloudinary.com/dx9n8tsyu/image/upload/f_auto,q_auto/v1637616915/react-proyect/screenshot-blog-and-porfolio.vercel.app-2021.11.22-15_34_24_sztdnl.png)
 
 ### Projects Gallery
 
 
 
-![projects gallery](https://res.cloudinary.com/dx9n8tsyu/image/upload/v1637617070/react-proyect/screenshot-blog-and-porfolio.vercel.app-2021.11.22-15_37_02_xfsy6d.png)
+![projects gallery](https://res.cloudinary.com/dx9n8tsyu/image/upload/f_auto,q_auto/v1637617070/react-proyect/screenshot-blog-and-porfolio.vercel.app-2021.11.22-15_37_02_xfsy6d.png)
 
 
 List of the projects I have done throughout my learning, at the top is located a menu in which you will be able to filter by technology in the same way if you click on any project this will send you to a page which has the detailed description of the entire project.
