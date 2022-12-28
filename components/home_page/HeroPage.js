@@ -11,6 +11,9 @@ import BulletPoints from "../svg/bulletPoints";
 
 import styles from "../../styles/heroPage.module.css";
 export default function HeroPage() {
+  const handleRedictTo = () => {
+    window.open("https://github.com/Allan-Sanchez", "_blank");
+  };
   return (
     <div id="heroPage" className={styles.heroPage}>
       <div className={styles.heroColumn}>
@@ -27,9 +30,9 @@ export default function HeroPage() {
         {/* description */}
         <p>
           I am a self-taught young man from Guatemala. I have solid knowledge in
-          various technologies such as VUE.JS, REACT, JAVASCRIPT, PHP, FLUTTER.
-          To know more about me, go to me
-          <span> GITHUB </span>
+          various technologies such as AWS, VUE.JS, REACT, TYPESCRIPT,
+          JAVASCRIPT, PHP, FLUTTER. To know more about me, go to me
+          <span onClick={() => handleRedictTo()}> GITHUB </span>
         </p>
         {/* social media */}
         <div className={styles.heroContact}>

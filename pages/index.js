@@ -57,7 +57,7 @@ export default function Home({ posts }) {
         <meta name="twitter:creator" content="@AllanSanchez2" />
       </Head>
 
-        <Navigation />
+      <Navigation />
 
       <main>
         <HeroPage />

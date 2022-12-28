@@ -30,6 +30,7 @@
 }
 .heroPage .heroColumn p span {
   color: var(--main-primary-color);
+  cursor: pointer;
 }
 .heroContact {
   display: flex;
