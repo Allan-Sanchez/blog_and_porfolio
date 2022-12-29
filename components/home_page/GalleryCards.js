@@ -45,9 +45,22 @@ export default function GalleryCards() {
               </div>
               <h3 className={styles.cardTitle}>{data.title}</h3>
               <div className={styles.cardContainerButton}>
-                <div
+                <div>
+                  <ul>
+                    {data.tags &&
+                      data.tags.map((tag, index) => (
+                        <li
+                          key={`${index}-card`}
+                          className={styles.cardContainerCategory}
+                        >
+                          {tag}
+                        </li>
+                      ))}
+                  </ul>
+                </div>
+                {/* <div
                   className={styles.cardContainerCategory}
-                >{`# ${data.category}`}</div>
+                >{`# ${data.category}`}</div> */}
                 <Link href={`/blog/${data.slug}`}>
                   <a>View Project</a>
                 </Link>

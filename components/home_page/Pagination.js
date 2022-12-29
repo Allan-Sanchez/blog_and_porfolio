@@ -25,9 +25,11 @@ export default function Pagination() {
   const handleClickPage = (btn) => {
     // TODO:: create this function in the reducer
     setPageActive(btn);
-    setPreviousPage(btn * 6 );
+    setPreviousPage(btn * 6);
     setNextPage(btn * 5 + 5);
     getPostwithPagination();
+    // move scroll to id projects
+    document.getElementById("projects").scrollIntoView();
   };
   // console.log(posts);
   return (

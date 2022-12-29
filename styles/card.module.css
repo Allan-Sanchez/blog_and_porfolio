@@ -38,11 +38,12 @@
 }
 
 .galleryCard .cardContainer {
-  height: 21rem;
+  height: 22rem;
   width: 24rem;
   padding: 1.25rem;
   border-radius: 1rem;
   background: rgba(31, 41, 55);
+  /* overflow: hidden; */
 }
 
 .cardContainer:hover {
@@ -68,9 +69,26 @@
 }
 
 .cardContainer .cardContainerButton {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  align-items: center;
+}
+.cardContainer .cardContainerButton ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  height: 60px;
+}
+.cardContainer .cardContainerButton ul li {
+  max-width: 150px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .cardContainer .cardContainerButton a {
   height: 2rem;

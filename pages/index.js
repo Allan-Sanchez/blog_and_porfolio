@@ -18,12 +18,16 @@ import { getAllFilesMetaData } from "../lib/mdx";
 
 export default function Home({ posts }) {
   const galleryContext = useContext(GalleryContext);
-  const { setPosts, getNameCategories } = galleryContext;
+  const { setPosts } = galleryContext;
 
   useEffect(() => {
+    if (posts.length > 0) {
+      posts.sort((a, b) => {
+        return new Date(b.date) - new Date(a.date);
+      });
+    }
     setPosts(posts);
-    getNameCategories();
-  }, []);
+  }, [posts]);
   return (
     <>
       <Head>

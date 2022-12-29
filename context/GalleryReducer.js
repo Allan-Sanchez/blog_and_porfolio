@@ -18,7 +18,12 @@ const GalleryReducer = (state, action) => {
         postsFilter: state.posts,
       };
     case SET_POSTS:
-      return { ...state, posts: action.payload, postsFilter: action.payload };
+      return {
+        ...state,
+        posts: action.payload,
+        postsFilter: action.payload,
+        categories: action.payload.map((post) => post.category),
+      };
     case GET_POSTS_CATEGORY:
       return {
         ...state,

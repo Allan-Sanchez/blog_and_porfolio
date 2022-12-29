@@ -3,10 +3,18 @@ import { getFileBySlug, getFiles } from "../../lib/mdx";
 import styles from "../../styles/blog.module.css";
 
 export default function Post({ source, frontMatter }) {
+  const handleRedictTo = () => {
+    window.open(frontMatter.link, "_blank");
+  };
   return (
     <>
       <div className={styles.blogContainer}>
         <MDXRemote {...source} />
+        <div className="butto_global_float">
+          <button onClick={() => handleRedictTo()} className="shake">
+            Visitar Pagina
+          </button>
+        </div>
       </div>
     </>
   );
